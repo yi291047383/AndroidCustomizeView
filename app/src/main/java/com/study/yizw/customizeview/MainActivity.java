@@ -11,27 +11,16 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
-
-
     private void init(){
 
     }
 
-
     private void initData(){
 
-
     }
-
 
     private void initView(){
 
-
     }
-
-
-
-
-
 
 }

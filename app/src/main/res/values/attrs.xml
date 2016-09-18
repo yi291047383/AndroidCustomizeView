@@ -21,7 +21,21 @@
     </declare-styleable>
 
 
-
+    <!--彩色环形进度条-->
+    <declare-styleable name="ColorProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="pointer_width" format="dimension"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+        <attr name="show_point_process" format="boolean" />
+        <attr name="diameter_value" format="integer"/>
+    </declare-styleable>
 
 
 </resources>
