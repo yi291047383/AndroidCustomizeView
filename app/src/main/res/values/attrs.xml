@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--waveView 波浪-->
+    <declare-styleable name="waveView">
+        <attr name="waveColor" format="color|reference"/>
+        <!--周期因子 W-->
+        <attr name="period_factor" format="integer"/>
+        <!--振幅因子 A-->
+        <attr name="amplitude_factor" format="integer"/>
+    </declare-styleable>
+
+
+    <!--三角形-->
+    <declare-styleable name="TriangleView">
+        <!--颜色 -->
+        <attr name="ViewColor" format="color|reference"/>
+        <!--浮标大小 -->
+        <attr name="ViewCursorSize" format="dimension"/>
+    </declare-styleable>
+
+
+
+
+
+</resources>
