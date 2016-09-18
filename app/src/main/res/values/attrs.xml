@@ -21,7 +21,40 @@
     </declare-styleable>
 
 
+    <!--彩色环形进度条-->
+    <declare-styleable name="ColorProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="pointer_width" format="dimension"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+        <attr name="show_point_process" format="boolean" />
+        <attr name="diameter_value" format="integer"/>
+    </declare-styleable>
 
 
+    <declare-styleable name="RoundProgressBar">
+        <!-- 圆环背景颜色 -->
+        <attr name="roundColor" format="color" />
+        <!-- 圆环进度颜色 -->
+        <attr name="roundProgressColor" format="color" />
+        <!-- 圆环宽度 -->
+        <attr name="roundWidth" format="dimension" />
+        <!-- 圆环被分割的份数 -->
+        <attr name="roundParts" format="integer" />
+        <!-- 圆环中间的字体颜色 -->
+        <attr name="roundProgressTextColor" format="color" />
+        <!-- 圆环中间的字体大小 -->
+        <attr name="roundProgressTextSize" format="dimension" />
+        <!-- 进度条最大值 -->
+        <attr name="max" format="integer" />
+        <!-- 圆环中间的字体是否显示 -->
+        <attr name="textIsDisplayable" format="boolean" />
+    </declare-styleable>
 
 </resources>
