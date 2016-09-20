@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <!--waveView 波浪-->
     <declare-styleable name="waveView">
         <attr name="waveColor" format="color|reference"/>
@@ -37,7 +36,7 @@
         <attr name="diameter_value" format="integer"/>
     </declare-styleable>
 
-
+    <!--间隔环形进度条-->
     <declare-styleable name="RoundProgressBar">
         <!-- 圆环背景颜色 -->
         <attr name="roundColor" format="color" />
@@ -56,5 +55,27 @@
         <!-- 圆环中间的字体是否显示 -->
         <attr name="textIsDisplayable" format="boolean" />
     </declare-styleable>
+
+    <!--横向可选滚轮-->
+    <declare-styleable name="HorizontalWheelView">
+        <!--被选文本颜色 -->
+        <attr name="HighlightColor" format="color|reference"/>
+        <attr name="MarkColor" format="color|reference"/>
+        <!--未被选文本颜色 -->
+        <attr name="MarkTextColor" format="color|reference"/>
+        <!--未被选文本大小 -->
+        <attr name="MarkTextSize" format="dimension"/>
+        <attr name="IntervalFactor" format="float"/>
+        <attr name="MarkRatio" format="float"/>
+        <!--浮标大小 -->
+        <attr name="CursorSize" format="dimension"/>
+        <!--中心处文本大小 -->
+        <attr name="CenterMarkTextSize" format="dimension"/>
+        <attr name="HighlightMarkTextSize" format="dimension"/>
+        <!--被选文本单位，比如年、kg，km等 -->
+        <attr name="AdditionalCenterMark" format="string|reference"/>
+    </declare-styleable>
+
+
 
 </resources>
