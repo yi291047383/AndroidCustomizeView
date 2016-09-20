@@ -1,3 +1,82 @@
 <resources>
     <string name="app_name">CustomizeView</string>
+
+    <!-- ErrorCode通用错误码转换 -->
+    <string name="code_undisposed">码农偷懒了</string>
+    <string name="code_default">哦，出错了：</string>
+    <string name="code_success">成功:</string>
+    <string name="code_unkonwn_error">未知错误:</string>
+    <string name="code_parse_error">数据解析错误:</string>
+    <string name="code_net_work_error">网络错误:</string>
+    <string name="code_url_not_found">请求地址不存在:</string>
+    <string name="code_server_disconnected">连接服务器失败:</string>
+    <string name="code_server_internal_error">服务器内部错误:</string>
+    <string name="code_request_param_format_error">请求参数格式错误:</string>
+    <string name="code_database_error">数据库错误:</string>
+    <string name="code_not_logined">请退出重新登录:</string>
+    <string name="code_net_data_error">网络错误:</string>
+
+    <!-- ErrorCode app服务器错误码转换 -->
+    <string name="code_app_server_inner_error">服务器内部错误:</string>
+    <string name="code_app_token_invaild">登录状态失效，请重新登录:</string>
+    <string name="code_app_sign_invalid">请求签名错误:</string>
+    <string name="code_app_no_such_resourse">请求的资源不存在:</string>
+    <string name="code_app_such_source_exists">该资源已经成功创建:</string>
+    <string name="code_app_request_parameter_invalid">请求参数格式错误:</string>
+    <string name="code_app_illegal_opetation">操作非法:</string>
+    <string name="code_app_not_sufficient_funds">失效请求:</string>
+    <string name="code_app_over_watch_max_bind_count">最多绑定20个手机账户:</string>
+    <string name="code_app_over_mobile_max_bind_count">最多绑定5个手表:</string>
+    <string name="code_app_over_contact_max_bind_count">最多添加50个联系人:</string>
+    <string name="code_app_off_line">账户已经下线:</string>
+    <string name="code_app_no_operator">无运营商:</string>
+    <string name="code_app_exist_friend">重复添加小伙伴:</string>
+    <string name="code_app_rsa_public_key_overdue">RSA公钥过期:</string>
+    <string name="code_app_data_error">数据错误:</string>
+
+    <!-- ErrorCode app服务器错误码转换 -->
+    <string name="code_sso_network_error">网络未连接，请检查网络后重试:</string>
+    <string name="code_sso_rand_code_error">验证码错误:</string>
+    <string name="code_sso_rand_code_over_limit">短信或邮箱验证超过了发送次数:</string>
+    <string name="code_sso_name_is_empty">用户名为空:</string>
+    <string name="code_sso_already_exist">账号已注册:</string>
+    <string name="code_sso_no_such_name_exists">获取短信验证码失败:账号不存在，请重新输入！错误码：</string>
+    <string name="code_sso_name_invalid">用户名无效:</string>
+    <string name="code_sso_password_empty">密码为空:</string>
+    <string name="code_sso_password_invalid">密码不符合规范:</string>
+    <string name="code_sso_old_password_invalid">旧密码不符合规范:</string>
+    <string name="code_sso_check_code_invaild">验证码无效:</string>
+    <string name="code_sso_sign_invalid">签名无效:</string>
+    <string name="code_sso_name_or_password_error">用户名或密码错误:</string>
+    <string name="code_sso_token_invalid">登录状态无效:</string>
+    <string name="code_sso_token_timeout">登录状态超时，请重新登录:</string>
+    <string name="code_sso_other_error">服务器内部错误:</string>
+
+    <!-- ErrorCode 七牛服务器错误码转换 -->
+    <string name="code_qiniu_connect_error">文件下载异常:</string>
+    <string name="code_qiniu_token_outdate">七牛token过期:</string>
+    <string name="code_qiniu_empty_data">数据为空:</string>
+
+
+    <!-- 网络错误统一提示 -->
+    <string name="net_error">网络未连接，请检查网络后重试</string>
+    <string name="net_warn">网络异常，请检查网络后重试</string>
+    <string name="error">网络错误</string>
+    <string name="crash_tip">程序异常！</string>
+
+    <string name="net_kindly_reminder">温馨提示</string>
+    <string name="net_error_need_login">您的网络异常,请检查网络并重新登录</string>
+    <string name="net_confirm">确定</string>
+    <string name="net_connect_server_fail">连接服务器失败</string>
+
+
+    <string name="offline_inform_title">网络异常</string>
+    <string name="offline_inform_msg">您的网络异常，请检查网络并重新登录！</string>
+
+    <string name="offline_normal_inform_title">账号</string>
+    <string name="offline_normal_inform_msg">您的账号在其他设备登录了，请重新登录！</string>
+    <string name="sso_password_invalid_count_0">今日输入剩余0次机会，请找回密码或明日再试。</string>
+
+
+
 </resources>

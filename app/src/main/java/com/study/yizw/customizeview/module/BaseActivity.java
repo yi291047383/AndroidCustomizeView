@@ -29,7 +29,6 @@ public class BaseActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //禁止横屏切换
         ActivityManager.getInstance().addActivity(this);
-        PushAgent.getInstance(this).onAppStart();
     }
 
     @Override
@@ -134,16 +133,16 @@ public class BaseActivity extends Activity {
      * 子类如果要实现自己的页面统计就重载此方法
      */
     protected void onPageResume() {
-        BehaviorUtil.onResume(this);
-        BehaviorUtil.onPageStart(this.getClass().getSimpleName());
+
+
     }
 
     /**
      * 与onPageResume配对出现,线性闭合
      */
     protected void onPagePause() {
-        BehaviorUtil.onPause(this);
-        BehaviorUtil.onPageEnd(this.getClass().getSimpleName());
+
+
     }
 
 
