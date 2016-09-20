@@ -20,9 +20,9 @@ import com.study.yizw.customizeview.R;
  */
 
 public class RoundProgressBar extends View {
-
     private float startAngle = 135;
     private float sweepAngle = 270;
+
 
     /**
      * 画笔对象的引用
@@ -112,13 +112,13 @@ public class RoundProgressBar extends View {
         paint.setAntiAlias(true); // 消除锯齿
         RectF oval = new RectF(centre - radius, centre - radius, centre + radius, centre + radius); // 用于定义的圆弧的形状和大小的界限
         float parts = 360.0f / (roundParts * 2);
-        Log.e("----", "-----parts------->" + parts);  //3.6
+        Log.e("---1-", "-----parts------->" + parts);  //3.6
 
         paint.setStyle(Paint.Style.STROKE); // 设置空心
         for (int i = 0; i < roundParts * 2; i++) {
             if (0 == i % 2) {
                 if (parts * i > startAngle && parts * i < (startAngle + sweepAngle) || (parts * i < 45)) {
-                    canvas.drawArc(oval, parts * i, parts, false, paint); // 根据进度画圆弧
+                    canvas.drawArc(oval, parts * i, (parts * 15) / 10, false, paint); // 根据进度画圆弧
                 }
             }
         }
@@ -129,8 +129,7 @@ public class RoundProgressBar extends View {
          */
         paint.setStrokeWidth(roundWidth); // 设置圆环的宽度
         paint.setColor(roundProgressColor); // 设置进度的颜色
-        float arcLength = (360.0f) * progress / max + 135;
-
+        float arcLength = ((270.0f) * progress / max)  + 135;
 
         paint.setStyle(Paint.Style.STROKE);
         for (int i = 0; i < arcLength / parts; i++) {
@@ -139,7 +138,9 @@ public class RoundProgressBar extends View {
                     canvas.drawArc(oval, i * parts, arcLength - parts * i, false, paint);
                 } else {
                     if (parts * i > startAngle && parts * i < 360) {
-                        canvas.drawArc(oval, parts * i, parts, false, paint); // 根据进度画圆弧
+                        Log.e("----", "-----parts * i------->" + parts * i);
+                        Log.e("----", "-----i------->" + i);
+                        canvas.drawArc(oval, parts * i, (parts * 15) / 10, false, paint); // 根据进度画圆弧
                     }
                 }
             }
@@ -148,13 +149,14 @@ public class RoundProgressBar extends View {
 
         if (progress > 83.3) {
             float arcLength2 = 360.0f * (progress - 83.3f) / max;
+            Log.e("----", "-----arcLength2------->" + arcLength2);
             for (int i = 0; i < arcLength2 / parts; i++) {
                 if (0 == i % 2) {
                     if (i == (int) (arcLength2 / parts) && parts * i <= 45) {
                         canvas.drawArc(oval, i * parts, arcLength2 - parts * i, false, paint);
                     } else {
                         if (parts * i < 45) {
-                            canvas.drawArc(oval, parts * i, parts, false, paint); // 根据进度画圆弧
+                            canvas.drawArc(oval, parts * i, (parts * 15) / 10, false, paint); // 根据进度画圆弧
                         }
                     }
                 }
@@ -246,6 +248,7 @@ public class RoundProgressBar extends View {
     public void setRoundWidth(float roundWidth) {
         this.roundWidth = roundWidth;
     }
+
 
 
 }
