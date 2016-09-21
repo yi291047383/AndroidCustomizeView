@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
+import com.study.yizw.customizeview.R;
+
 /**
  * New Class
  * <p>

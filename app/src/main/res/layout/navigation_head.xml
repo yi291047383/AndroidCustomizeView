@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="50dp"
+                android:background="@color/white">
+    <ImageView
+        android:id="@+id/navigate_back_btn"
+        style="@style/navigation_left_image_normal_style"
+        android:onClick="back"/>
+
+    <TextView
+        android:id="@+id/navigate_back_text"
+        style="@style/navigation_left_image_normal_style"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/navigate_title_tv"
+        style="@style/navigation_title_normal_style"/>
+
+    <ImageView
+        android:id="@+id/navigate_right_img"
+        style="@style/navigation_right_image_normal_style"/>
+
+    <TextView
+        android:id="@+id/navigate_right_btn"
+        style="@style/navigation_right_image_normal_style"
+        android:visibility="gone"/>
+
+    <TextView
+        style="@style/navigation_bottom_line"/>
+</RelativeLayout>

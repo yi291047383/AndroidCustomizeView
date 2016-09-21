@@ -13,6 +13,8 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.study.yizw.customizeview.R;
+
 import java.util.List;
 
 /**
