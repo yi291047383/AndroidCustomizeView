@@ -9,5 +9,4 @@ package com.study.yizw.customizeview.module;
 public class HomePageActivity extends BaseActivity{
 
 
-
 }
